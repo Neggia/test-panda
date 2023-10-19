@@ -11,20 +11,20 @@ import {
 
 import type { ByteString } from 'scrypt-ts';
 
-export class TestPanda extends SmartContract {
+export class TestPanda2 extends SmartContract {
     @prop(true)
     count: bigint
 
-/*     @prop(true)
+    @prop(true)
     timestampFrom: bigint // Timestamp window in which the price target needs to be reached.
     @prop(true)
-    timestampTo: bigint */
+    timestampTo: bigint
 
     constructor(count: bigint) {
         super(count)
         this.count = count
-/*         this.timestampFrom = 0n
-        this.timestampTo = 0n */
+        this.timestampFrom = 0n
+        this.timestampTo = 0n
     }
 
     @method(SigHash.SINGLE)
